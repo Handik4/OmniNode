@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #03070c;
+}
+
+body {
+  margin: 0;
+  background: #03070c;
+  color: #e8eef6;
+  font-family: var(--font-body);
+  letter-spacing: 0;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.hero-card {
+  border: 1px solid rgb(255 255 255 / 0.16);
+  background:
+    linear-gradient(120deg, rgb(12 23 34 / 0.78), rgb(4 10 16 / 0.56)),
+    rgb(4 9 14 / 0.6);
+  box-shadow:
+    0 40px 100px rgb(0 0 0 / 0.58),
+    inset 0 1px 0 rgb(255 255 255 / 0.1);
+  padding: clamp(1.35rem, 4vw, 2.4rem);
+  backdrop-filter: blur(18px) saturate(125%);
+  -webkit-backdrop-filter: blur(18px) saturate(125%);
+}
+
+.signal-mark {
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border: 1px solid rgb(143 234 255 / 0.5);
+  color: #a5efff;
+  box-shadow: inset 0 0 16px rgb(69 197 226 / 0.12);
+}
+
+canvas {
+  touch-action: pan-y;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
