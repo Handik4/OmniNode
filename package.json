@@ -1,0 +1,19 @@
+{
+  "name": "@omninode/root",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "OmniNode universal DePIN router: intelligent contract and end-to-end workflow tooling.",
+  "scripts": {
+    "workflow": "tsx scripts/run_workflow.ts",
+    "workflow:deploy": "OMNINODE_DEPLOY=1 tsx scripts/run_workflow.ts"
+  },
+  "dependencies": {
+    "genlayer-js": "^1.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

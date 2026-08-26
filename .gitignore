@@ -6,3 +6,5 @@ __pycache__/
 *.py[cod]
 .coverage
 .DS_Store
+.env
+.env.local

@@ -25,7 +25,7 @@ import { FormEvent, useEffect, useRef, useState } from "react";
 import type { Group } from "three";
 import type { EIP1193Provider } from "viem";
 
-const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_OMNINODE_CONTRACT || "0xA139A785518eeA23912d8632278634505f732f76";
+const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_OMNINODE_CONTRACT || "0x59c768Cc2b062aC0e4B67361917e3f998d42F7bF";
 const MINIMUM_STAKE_WEI = 10_000_000_000_000_000n;
 const VALID_ID = /^[A-Za-z0-9](?:[A-Za-z0-9._-]{0,126}[A-Za-z0-9])?$/;
 
